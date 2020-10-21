@@ -19,6 +19,7 @@ import {eventBus} from '../main'
             addQuote() {
                 // eventBus.addQuote(this.newQuote)
                 this.$emit("quoteAdded", this.newQuote)
+                this.newQuote = ""
             }
         }
     }

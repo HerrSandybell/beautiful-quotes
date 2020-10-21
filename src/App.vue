@@ -32,7 +32,7 @@ import {eventBus} from './main'
                 this.quotes.splice(index,1)
             },
             addQuote(quote) {
-                if (this.quotes.length > this.quoteLimit) {
+                if (this.quotes.length >= this.quoteLimit) {
                     alert("You cannot add more quotes. Please delete one first.")
                 } else {
                     this.quotes.push(quote);
